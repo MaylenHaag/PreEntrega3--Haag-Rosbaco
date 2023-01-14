@@ -52,7 +52,7 @@
 
 
 .logo__img{
-    width: 18%;
+    width: 60px;
     height: auto;
     margin-top: 5%;
     position: relative;
@@ -73,7 +73,7 @@
     
     
     .logo__img{
-        width: 70px;
+        width: 60px;
         height: auto;
         margin-top: 5%;
         position:initial;
@@ -85,7 +85,7 @@
 
 @keyframes muevete{
 	0%{left:10%;}
-	100%{left:140%;}
+	100%{left:1000%;}
 }
 
 .header__nav{
@@ -748,6 +748,11 @@ nav ul li a:hover{
     #sobrenosotros{
         height: auto;
     
+    }
+
+
+    .sobrenosotros--info{
+        margin-top: 35%;
     }
 
 
