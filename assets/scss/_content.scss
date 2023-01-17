@@ -86,7 +86,7 @@
     
         .header__nav{
             font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-size: c.$fuente/2; 
+            font-size: calc(c.$fuente / 2); 
     
         }
     }
@@ -94,7 +94,7 @@
 
     .header__nav{
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: c.$fuente/2; 
+        font-size: calc(c.$fuente / 2); 
         padding-right: 0;
         padding-left: 10px;
 
@@ -148,7 +148,7 @@
             color: c.$color;
             background-color: map-get(c.$colores-head,"fondo");
             font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-size: c.$fuente/2;
+            font-size: calc(c.$fuente / 2);
             border: none;
             cursor: pointer;
 
@@ -262,7 +262,7 @@
         p{
             width: auto;
             margin: 70% 20px 30px 20px;
-            font-size: c.$fuente/2;
+            font-size: calc(c.$fuente / 2);
             color: map-get(c.$colores-main,"desafio-h1");
             
         }
@@ -502,6 +502,7 @@
 
 #noticias{
     background-color: map-get(c.$colores-main,"noticias-fondo");
+    color: map-get(c.$colores-main, "color" );
     font-family: 'Quicksand', sans-serif;
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -591,6 +592,7 @@
     .noticia__div5:hover,
     .noticia__div6:hover{
         background-color: map-get(c.$colores-main,"fondo--mobile");
+        color: c.$color;
         border-radius:10px;
         transform: scale(1);
         transition: 0.3s;
@@ -625,17 +627,20 @@
     }
 
 
-    //CONDICIONALES
-    .noticia__div1, .noticia__div1:hover,
-    .noticia__div2, .noticia__div2:hover,
-    .noticia__div3, .noticia__div3:hover,
-    .noticia__div4, .noticia__div4:hover,
-    .noticia__div5, .noticia__div5:hover,
-    .noticia__div6, .noticia__div6:hover{
-        @if map-get(c.$colores-main,"noticias-fondo")==#ff5470{color: map-get(c.$colores-main,"color")}
-        @else {color: c.$color}
 
-    }
+
+    // //CONDICIONALES
+    // .noticia__div1, .noticia__div1:hover,
+    // .noticia__div2, .noticia__div2:hover,
+    // .noticia__div3, .noticia__div3:hover,
+    // .noticia__div4, .noticia__div4:hover,
+    // .noticia__div5, .noticia__div5:hover,
+    // .noticia__div6, .noticia__div6:hover{
+    //     @if map-get(c.$colores-main,"noticias-fondo")==#ff5470{color: map-get(c.$colores-main,"color")}
+    //     @else {color: c.$color}
+
+    // }
+    
 
 }
 
@@ -650,7 +655,7 @@
 
 
         p{
-            font-size: c.$fuente/2;
+            font-size: calc(c.$fuente / 2);
         
         }
 
@@ -658,6 +663,7 @@
         .noticia__div3{
             margin-left: 20%;
             background-color:map-get(c.$colores-main,"fondo--mobile");
+            color: c.$color;
             border-radius: 10px;
     
         }
@@ -671,13 +677,13 @@
         margin-left: 10px;
         margin-right: 10px;
         background-color:map-get(c.$colores-main,"fondo--mobile");
+        color: c.$color;
         border-radius: 10px;
 
         }
     
     }
 }
-
 
 
 #sobrenosotros{
